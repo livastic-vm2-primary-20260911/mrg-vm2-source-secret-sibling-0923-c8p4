@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM2 source-secret sibling scope gate C8P4
+    conditions:
+      - author = livastic-vm2-primary-20260911
+      - title = VM2_SOURCE_SECRET_SIBLING_C8P4
+      - scope = vm2-source-secret-lateral-c8p4
+    actions:
+      merge:
+        method: merge
